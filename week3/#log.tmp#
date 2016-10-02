@@ -1,0 +1,22 @@
+ENT 1 bytes: l
+SENT 1 bytes: s
+SENT 1 bytes: 
+
+RECEIVED 75 bytes: #log.tmp#
+#server.c#
+Makefile
+client
+client.c
+demo
+log.tmp
+server
+server.c
+
+SENT 1 bytes: p
+SENT 1 bytes: w
+SENT 1 bytes: d
+SENT 1 bytes: 
+
+RECEIVED 29 bytes: /u/cs/ugrad/lamk/CS111/week3
+
+SENT 1 bytes: 

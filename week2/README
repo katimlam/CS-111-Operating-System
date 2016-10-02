@@ -1,0 +1,25 @@
+The submission for lab1a includes a c source file lab1a.c, a Makefile, and a README file.
+
+The lab1a executable can be build using command $ make check.
+
+This program exploits the terminal interface, interprocess communication using processes and
+pipes, and multi-threading, exception handling.
+
+In this program, the setting of the terminal is altered to be non-conanical and 
+non-echo mode. In this mode, standard input is taking character by chracter (backspace counted
+as a character), and the terminal no longer echo what has type. Instead, the program write what
+it has read. One feature is that it will change either <cr> or <lf> to two characters <cr><lf>.
+
+The program support an argument --shell. When --shell is enable, it will fork() a child process. 
+Two pipes are created to connect the two processes. The parent process takes stdin from the 
+keyboard and transfer to the child via the pipe. The child exec() the /bin/bash and take what
+transferred from parent process as stdin. Then, stdout of the child is redirected to the pipe and
+transfer back to the parent process. In the parent process, the output transferred from the child
+via pipe will output via stdout. In order to forward and receive data between the child process 
+at the same time, multi-threading takes place.
+
+Typing ^D will terminate the program.
+
+Reference used when developing this program:
+http://stackoverflow.com/questions/4812891/fork-and-pipes-in-c
+https://ftp.gnu.org/old-gnu/Manuals/glibc-2.2.3/html_chapter/libc_17.html#SEC360

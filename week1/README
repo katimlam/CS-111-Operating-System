@@ -1,0 +1,22 @@
+The tar.gz includes the lab0.c source file, Makefile, README, and two screenshots.
+In the lab0.c file, the main function can take in command line arguments with the
+implementation of getopt_long() function, the program takes in two arguments --input and 
+--output, which indicate the input file name and output file name, and two flags, --segfault
+and --catch. The program takes in the input file and output the text to the output file. I do
+this by opening file descriptors for input and output using syscall function open() and creat(). 
+Then, redirect the file descriptors to stdin and stdout. Lastly, I use syscall function read() 
+and write() to read and write the character stream to the output.
+
+The Makefile contains clean, dist, and check. Clean deletes the files created while doing check
+and builds. Dist compress files needed into a tar ball. check will do a smoke test on basic
+functionality of the program. It creates two .tmp files, one for input and one for output. They
+are initialized with different text content. After doing ./lab0, it will check if the two files have
+the same content at the end.
+
+The two screenshots show how I use gdb to show the segmentation fault. In screenshot1, it shows the
+backtrace of segfault. In screenshot2, it shows that the NULL pointer points to address 0x0, and 
+this address cannot be accessed.
+
+Below are the online resources I referenced when implementing getopt_long()
+http://www.gnu.org/software/libc/manual/html_node/Getopt-Long-Option-Example.html
+http://www.informit.com/articles/article.aspx?p=175771&seqNum=3

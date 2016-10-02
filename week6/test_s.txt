@@ -1,0 +1,128 @@
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 402217611ns
+per operation: 2513ns
+corrected per operation: 1.036716ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 379385363ns
+per operation: 2371ns
+corrected per operation: 1.008078ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 376997041ns
+per operation: 2356ns
+corrected per operation: 1.031072ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 380275858ns
+per operation: 2376ns
+corrected per operation: 1.069307ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 370347540ns
+per operation: 2314ns
+corrected per operation: 1.070305ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 347801176ns
+per operation: 2173ns
+corrected per operation: 1.032304ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 341513420ns
+per operation: 2134ns
+corrected per operation: 1.040468ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 323990318ns
+per operation: 2024ns
+corrected per operation: 1.012000ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 317226142ns
+per operation: 1982ns
+corrected per operation: 1.015889ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 320068823ns
+per operation: 2000ns
+corrected per operation: 1.050420ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 319899448ns
+per operation: 1999ns
+corrected per operation: 1.074731ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 302990198ns
+per operation: 1893ns
+corrected per operation: 1.041254ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 296448338ns
+per operation: 1852ns
+corrected per operation: 1.042206ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 300558219ns
+per operation: 1878ns
+corrected per operation: 1.079931ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 278488186ns
+per operation: 1740ns
+corrected per operation: 1.022327ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 280422179ns
+per operation: 1752ns
+corrected per operation: 1.051621ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 285895891ns
+per operation: 1786ns
+corrected per operation: 1.094363ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 262093424ns
+per operation: 1638ns
+corrected per operation: 1.023750ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 263919615ns
+per operation: 1649ns
+corrected per operation: 1.051658ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 269320879ns
+per operation: 1683ns
+corrected per operation: 1.094278ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 264258594ns
+per operation: 1651ns
+corrected per operation: 1.094102ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 250605181ns
+per operation: 1566ns
+corrected per operation: 1.057394ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 251489664ns
+per operation: 1571ns
+corrected per operation: 1.080468ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 238380887ns
+per operation: 1489ns
+corrected per operation: 1.042717ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 236106176ns
+per operation: 1475ns
+corrected per operation: 1.051319ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 237155613ns
+per operation: 1482ns
+corrected per operation: 1.074692ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 242035245ns
+per operation: 1512ns
+corrected per operation: 1.115867ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 228937580ns
+per operation: 1430ns
+corrected per operation: 1.072768ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 225326680ns
+per operation: 1408ns
+corrected per operation: 1.073989ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 231802822ns
+per operation: 1448ns
+corrected per operation: 1.122481ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 215832545ns
+per operation: 1348ns
+corrected per operation: 1.062254ns
+8 threads x 10000 iterations x (insert + lookup/delete) = 160000 operation
+elapsed time: 219249752ns
+per operation: 1370ns
+corrected per operation: 1.096000ns

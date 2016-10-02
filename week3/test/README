@@ -1,0 +1,37 @@
+Ka Tim Lam
+104477818
+
+This project includes:
+	Two C source files: server.c and client.c
+	Makefile
+	my.key
+	README
+
+The client.c file has the implementation of a client program that reads from
+keyboard and transfers the data via TCP connection to the server program. It
+support three options, --port=<portnum>, --log=<logfile>, and --encrypt. 
+--port is required to take an argument of port number of the connection. 
+--log is optional and it record the data received and sent via the connection.
+--encrypt is an optional flag. When enable, it encrypt before sending data to connection
+and decrypt when receiving data from connection. The encryption and decryption method is 
+twofish cfb.
+
+The server.c file has the implementation of a server program that transfer data between the 
+connection and the shell process. It supports two arguments, --port=<portnum> and --encrypt.
+--port is required to take an argument of port number of the connection. 
+--encrypt is an optional flag. When enable, it encrypt before sending data to connection
+and decrypt when receiving data from connection. The encryption and decryption method is 
+twofish cfb.
+
+my.key contains a 16-byte string key that is used in the encryption process.
+
+Makefile supports the following functions:
+make: compile and create executables for both server.c and client.c
+make client: only compile and execetables for client.c
+make server: only compile and execetables for server.c
+make dist: create a tarball
+make clean: delete all executables
+
+The following are the online resources referenced when developing this project:
+http://linux.die.net/man/3/mcrypt
+http://www.cs.rpi.edu/~moorthy/Courses/os98/Pgms/socket.html

@@ -1,0 +1,54 @@
+When I keep the number of threads constant (2 threads), it takes about 1500000
+iterations to result in a failure.
+When I keep the number of iteration constant (1000), it takes about 32
+threads to result in a failure.
+
+1A. Why does it take this many threads or iterations to result in failure?
+When the number of threads and iterations becomes that many, the frequency the
+the instruction of the add subroutine being separated by more than one threads
+is high.
+
+1B. Why does a significantly smaller number of iterations so seldom fail?
+When the number of iterations is small, meaning each thread iterates fewer
+add actions. Thus lower the frequency of the race conditions.
+
+2A. Why does the average cost per operation drop with increasing iterations?
+The time spent in initializing the threads and other functions are significant
+when there is fewer iteration, thus the average cost is higher. When the 
+number of iterations increases, it shows a more accurate average time spent
+on one iteration.
+
+2B. How do we know what the "correct" cost is?
+The correct cost is when the number of iterations becomes very big and the
+average cost will remain about the same even though more iterations 
+are took. That limit is the accurate average cost per operation.
+
+2C. Why are the --yield runs so much slower? Where is the extra time going?
+It spent a lot of time when the thread call pthread_yield. This relinquishes
+the CPU and put the thread itself to the back of the run quene. The yield
+action takes place in every operation of add(). This significantly spends
+more time.
+
+2D. Can we get valid timings if we are using --yield? How, or why not?
+No, it violates the mechanics of the thread. The action of yield sinificantly
+increases the time spent on each operation.
+
+3A. Why do all of the options perform similarly for low numbers of threads?
+When the number of threads is small, the chance of threads waiting for a
+thread to finish its critical section is lower. 
+
+3B. Why do the three protected oeprations slow down as the number of 
+threads rises?
+With more threads running at the same time, the threads of the three options 
+are waiting for the lock more frequently. These three options function to lock
+the critical section of the threads, the add operations. Only one thread can
+runs the critical section at the same time, the other threads have to wait, either
+sleep or spin.
+
+3C. Why are spin-locks so expensive for large number of threads?
+They spend a lot of time to spin the while loop and wait for the lock to be
+released. In each time slice of a spinning thread, it wastes time doing
+spinning even and it is useless to keep checking a value that is unchanged in
+its time slice. With higher number of threads, when a thread is running its 
+critical section, the other threads waiting for the lock take turns to spin.
+So, with more threads spinning, the time takes for waiting is longer.

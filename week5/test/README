@@ -1,0 +1,29 @@
+Ka Tim Lam
+104477818
+(use 1 slip day)
+
+2B.1A: The cost per operation first decreases when iterations are small,
+then increases significantly when when iterations increases. The effect of
+thread calling operations significantly raise the average cost per operation.
+As iterations go up, the average cost per operation become more accurate, thus
+lowered. When iterations becomes higher (over 1000), the cost is higher. The
+reason is that the insert and lookup functions spend more time as the list
+size becomes greater. The big O for insert and look up is O(n^2).
+
+2B.1B: I would change the the scale of the graph to be 
+cost/number of list element as function of numbe of iterations.
+
+
+For threads = 3
+The number of iterations for the program to run into error are shown:
+No yield: 60
+--yield=i: 25
+--yield=d: 25
+--yield=is: 30
+--yield=ds: 200
+
+2B.2A: 
+The list's critical session is larger than the add()'s critical session.'
+The lock is held longer in the list
+Therefore the threads have higher probability to conflict.
+More conflicts means more blocked threads, more overhead, and less parallelism.
